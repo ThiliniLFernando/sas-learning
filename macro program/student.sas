@@ -8,4 +8,19 @@
 	run;
 %mend importStudentData;
 
-%importStudentData;
+%macro printAllStudentDetails;
+	proc print data=student;
+	run;
+%mend printAllStudentDetails;
+
+%macro printByGender(gen);
+	proc print data=;
+	where Sex=&gen;
+	run;
+%mend printByGender ;
+
+%macro printByAge(age);
+	proc print data=;
+	where Age=&age;
+	run;
+%mend printByAge;
