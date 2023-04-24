@@ -4,8 +4,6 @@
 	infile st; 
 	input id fname$ lname$ sex$ age mobileNo$ adress1$ address2$ address3$ joinedDate$;
 	run;
-	proc print;
-	run;
 %mend importStudentData;
 
 %macro printAllStudentDetails;
